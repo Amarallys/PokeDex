@@ -39,7 +39,7 @@ export default function Home(name) {
                 <Grid container spacing={2}>
                     {pokemons.map((pokemon) => (
                         <Grid item xs={2}>
-                            <PokemonCard name={pokemon.data.name} image={pokemon.data.sprites.front_default}/>
+                            <PokemonCard name={pokemon.data.name} image={pokemon.data.sprites.front_default} types={pokemon.data.types}/>
                         </Grid>
                     ))}
                 </Grid>
